@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 5vh;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: fixed;
+    width: 100vw;
+}
+
+.headerfiller{
+    height: 5vh;
+}
+
+.logo{
+    background-image: url("images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 33px;
+    width: 40px;
+    opacity: 0.5;
+}
+
+nav ul{
+    width: 70vw;
+    height: 5vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;    
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    opacity: 1;
+}
+
+.logo:hover{
+    opacity: 1;
+}
+
+.shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f7;
+    height: 8vh;
+}
+
+.iphone12{
+    display: block
+}
+
+.t1{
+    font-size: 62px;
+    font-weight:bold;
+    padding-top: 8vh;
+    margin-bottom: 1vh;
+}
+
+.t2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 3vh;
+}
+
+.t3{
+    font-size: 20px;
+    opacity: 0.75;
+    margin-bottom: 3vh;
+}
+
+.t4 a{
+    font-size: 20px;
+    margin: 0 22px;
+}
+
+.iphone{
+    background-color:#f2f2f2;
+    height: 80vh;
+    margin: 10px 0;
+}
+
+.iphonePic{
+    display: flex;
+    height: 43vh;
+    overflow: hidden;
+}
+
+.iphonePic img{
+    margin: auto;
+    width: 75vw;
+    margin-top: -14vh;
+}
+
+.iphonePic2{
+    display: flex;
+    height: 43vh;
+    overflow: hidden;
+}
+
+.iphonePic2 img{
+    margin: auto;
+    margin-top: -14vh;
+}
+
+.blackphn{
+    background-color: black;
+    height: 80vh;
+    margin: 10px 0;
+}
+
+.mac{
+    background-color: #c7e5e5;
+    background-image: linear-gradient(to right,#c7e5e5,#c1e3e6,#a2d6f2);
+    height: 80vh;
+    margin: 10px 0;
+}
+
+.MacPic{
+    display: flex;
+    height: 49vh;
+    overflow: hidden;
+}
+
+.MacPic img{
+    margin: auto;
+    margin-top:6vh;
+    height: 38vh;
+    width: 38vw;
+}
+
+.itembox{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 10px 0;
+}
+
+.item1{
+    background-color: black;
+    height: 70vh;
+    width: 48vw;
+    margin-bottom: 10px;
+}
+
+.ipad{
+    font-size: 50px;
+}
+
+.ipad2{
+    font-size: 25px;
+}
+
+.ipadPic{
+    overflow: hidden;
+    width: 45vw;
+    height: 40vh;
+    margin: auto;
+    justify-content: center;
+}
+
+.ipadPic img{
+    width: 54vw;
+    height: 56vh;
+    margin-top: -53px;
+    margin-left: -24px;     
+}
+
+.item2{
+    background-color: black;
+    height: 70vh;
+    width: 48vw;
+}
+
+.WatchPic{
+    overflow: hidden;
+    margin: auto;
+    justify-content: center;
+    width: 32vw;
+    height: 40vh;
+}
+
+.WatchPic img{
+    height: 39vh;
+}
+
+.item3{
+    background-color: rgb(255, 255, 255);
+    width: 48vw;
+    height: 70vh;
+    margin-bottom: 10px;
+}
+
+.imac{
+    font-size: 50px;
+}
+
+#imac{
+    width: 45vw;
+    margin-top: 12px;
+}
+
+.item4{
+    background-image: linear-gradient(to top right,purple,rgb(201, 86, 176),red,rgb(135, 135, 223));
+    width: 48vw;
+    height: 70vh;
+}
+
+.notebox{
+    background-image: url("images/notes1.jpg");
+    background-size: 28vw 49vh;
+    height:26vw;
+    width: 49vh;
+    padding-left: 1.5vw;
+}
+
+.line1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 11vh;
+}
+
+.line2 mark{
+    background-color:#ffe9ba;
+}
+
+.line2{
+    font-size: 55px;
+    font-weight: bolder;
+    margin-top: 1.5vh;
+}
+
+.line3{
+    font-size: 55px;
+    font-weight: bolder;
+    margin-top: -1vh;
+}
+
+.line5 a{
+    margin: 0;
+}
+
+.foot{
+    width: 80vw;
+    margin: 2vh auto;
+    margin-bottom: 4vh;
+    color: rgb(75, 70, 70);
+    font-size: 0.9em;
+}
+
+hr{
+    background-color: gray;
+    height: 0.2vh;
+    opacity: 0.4;
+    border: none;
+}
+
+footer{
+    margin-top: 1vh;
+}
+.legaltext{
+    margin-right: 2vw;
+    opacity: 0.8;
+}
+
+.links a{
+    color: rgba(0, 0, 0, 0.808);
+}
+
+.country{
+    display: inline;
+    float: right;
+    color: rgba(0, 0, 0, 0.808);
+}
+
