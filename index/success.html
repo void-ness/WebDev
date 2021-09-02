@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .body{
+            display: flex;
+            width: 50vw;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-between;
+            /* align-items: center; */
+            height: 50vh;
+        }
+
+        .disp{
+            width: 100%;
+            clear: both;
+            height: 12%;
+        }
+
+        .disp input{
+            width: 100%;
+            height: 100%;
+        }
+
+        .oper{
+            width: 33%;
+            height: 25%;
+        }
+
+        .oper button{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 2rem;" id="12">
+        congrats for making it
+    </h1>
+    <form>
+    <button>hello</button>
+    <button type="reset" value="d">hello</button>
+    <input type="button" placeholder="gb" value="ncknc" title="plesd" onclick="test()">
+    <input type="text">
+    <div class="buy">
+        <h1>hello</h1>
+    </div>
+
+    <div class="body">
+        <div class="disp">
+            <input type="number" placeholder="Enter Your Number" id="inp">
+        </div>
+        <div class="oper">
+            <button id="add" type="button" value="+">+</button>
+        </div>
+        <div class="oper">
+            <button id="sub" value="-" type="button">-</button>
+        </div>
+        <div class="oper">
+            <button id="calc" type="button" value="=">=</button>
+        </div>
+        <div class="disp result" id="disp" >
+            here the final result will be shown
+        </div>
+    </div>
+</form>
+    <script>
+        function main(){
+            let result = 0;
+            let count = 0;
+            document.getElementById("add").addEventListener("click", function(){
+                let val = Number(document.getElementById("inp").value)
+                result = result + val;
+                document.getElementById("inp").value = ""
+                document.getElementById("inp").placeholder = ""
+                document.getElementById("disp").innerText = "YOUR FINAL ANSWER will be shown here";
+                count++;
+            })
+            document.getElementById("calc").addEventListener("click", function(){
+                if (count == 0){
+                    alert("Please perform calculations First");
+                }
+
+                else{
+                document.getElementById("disp").innerText = "YOUR FINAL ANSWER IS CALC AS " + result;
+                document.getElementById("inp").value = "";
+                document.getElementById("inp").placeholder = "Enter Your Number";
+                result = 0;
+                }
+            })
+        }
+        main();
+        
+        document.getElementById("sub").addEventListener("click",function(){})
+        function loop(){
+            document.createElement("")
+        }
+    </script>
+</body>
+</html>
