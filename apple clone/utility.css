@@ -1,0 +1,25 @@
+.noline{
+    text-decoration: none;
+}
+
+.centertext{
+    text-align: center;
+}
+
+#flexC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white{
+    color: white;
+}
+
+.PadTop{
+    padding-top: 0px;
+}
+
+.in{
+    display: inline;
+}
