@@ -1,0 +1,24 @@
+doctype html
+html 
+    head 
+        title Home 
+        style
+            include ../static/style.css
+    body 
+        nav.navbar 
+            ul
+                li #[a(href="#") Home] 
+                li #[a(href="#") About] 
+                li #[a(href="#") Contact Us]
+        section#slider 
+            div.photo 
+                img(src="../static/photos/sunset1.jpg")
+        section#contact-form 
+            .contactform
+                form(method="post")
+                    input(type="text" placeholder="Enter your Name" name="Username")
+                    input(type="text" placeholder="Enter passcode" name="pass")
+                    button(type="submit") Check
+        section#Result-info 
+            p.result 
+                |Respected Sir/ Ma'am <b>#{name}</b> Thank You for your interest in entering the secret room. as per the results of our evaluation metrics your request status is <b>#{status}</b>. thank you!
